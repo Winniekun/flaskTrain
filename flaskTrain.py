@@ -24,7 +24,7 @@ def signin():
         error = 'Your password needs at least 1 capital'
     if error is not None:
         return jsonify({'r': 1, 'error': error})
-    return jsonify({'r': 0, 'rs': password})
+    return jsonify({'r': 0, 'rs': username})
 
 
 
