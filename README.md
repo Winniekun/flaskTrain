@@ -5,7 +5,7 @@
 * [x] 实现文件上传
 
   * flask原生文件上传
-  * flask-dropzone 上传
+  * flask-dropzone 上传+撤销
 
   
 
