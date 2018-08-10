@@ -5,7 +5,16 @@
 * [x] 实现文件上传
 
   * flask原生文件上传
+
+    ![image](https://raw.githubusercontent.com/KongWiKi/flaskTrain/master/showImage/upload.png)
+
+    ![image](https://raw.githubusercontent.com/KongWiKi/flaskTrain/master/showImage/upload1.png)
+
   * flask-dropzone 上传+撤销
+
+    ![image](https://raw.githubusercontent.com/KongWiKi/flaskTrain/master/showImage/imageShow.png)
+
+    
 
   
 
