@@ -14,7 +14,9 @@
 
     ![image](https://raw.githubusercontent.com/KongWiKi/flaskTrain/master/showImage/imageShow.png)
 
-    
+* [x] flask-restful练习
 
-  
+  * 1
+
+    ![image](https://raw.githubusercontent.com/KongWiKi/flaskTrain/master/showImage/flask-restful.png)
 
