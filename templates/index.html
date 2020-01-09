@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/welcome/main.css') }}"/>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/welcome/main.js') }}"></script>
+    <title>登录界面</title>
+</head>
+<body onselectstart="return false">
+
+<!--画板-->
+<canvas id="canvas"></canvas>
+
+<!--遮挡层-->
+<div id="masking">
+
+    <!--主要层·控制主要内容位置-->
+    <div id="mainlay">
+
+        <!--标题-->
+        <div id="mly_title">
+            <h1>Login</h1>
+        </div>
+
+
+        <!--登录界面-->
+        <div id="mly_login">
+
+            <form action="/signin" method="post" role="form">
+                <input class="user" type="name" name="username" placeholder="Username" required autofocus>
+                <input class="pass" type="password" name="password" placeholder="Password" required>
+                <input type="button" value="登录" class="sub"/>
+            </form>
+
+
+        </div>
+
+        <!--忘记密码-->
+        <div class="lay_forpass">
+            <a href="https://www.kongwiki.top" target="_blank">忘记密码?</a>
+        </div>
+
+        <div id="result"></div>
+
+
+    </div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/welcome/can.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/own/sign.js') }}"></script>
+
+</html>

@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return render_template('signin.html')
+	return render_template('index.html')
 
 
 @app.route('/signin', methods=['POST'])
@@ -26,6 +26,10 @@ def signin():
 	if error is not None:
 		return jsonify({'r': 1, 'error': error})
 	return jsonify({'r': 0, 'rs': [username, password]})
+
+@app.route("/home")
+def home():
+	return render_template('home.html')
 
 
 if __name__ == '__main__':

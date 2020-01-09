@@ -4,9 +4,8 @@
 //@File: sign.py
 //@Email: kongwiki@163.com
 //
-
 $(function () {
-    $('.btn').click(function () {
+    $(".sub").click(function () {
         var $result = $('#result');
         var $username = $('input[name="username"]').val();
         var $password = $('input[name="password"]').val();
@@ -15,13 +14,14 @@ $(function () {
             data: $('form').serialize(),
             // data: {'username': $username, 'password': $password},
             type: 'POST',
-            dataType: 'json'
-        }).done(function (data) {
-            if (!data.r) {
-                $result.html(data.rs);
-            } else {
-                $result.html(data.error);
+            dataType: 'json',
+            success: function (data) {
+                window.location.href = "/home"
+            },
+            error: function (data) {
+                alert("接受失败")
             }
-        });
+        })
     });
 });
+
